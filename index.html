@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Sequence Priors</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Simple Sequence Priors for Reinforcement Learning">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			
+</head>
+<body>
+	<header>
+		<h1>Simple Sequence Priors for Reinforcement Learning</h1>
+	</header>
+	<div class="center-line">
+		<div class="line"></div>
+	</div>
+	
+	<div class="container">
+	<p>TLDR: Everything else being equal, simpler models should be preferred over more complex ones. Following this principle, we propose a reinforcement learning (RL) algorithm that learns to solve tasks with sequences of actions that are compressible. Two possible sources of simple action sequences are explored: Sequences that can be learned with autoregressive models, and sequences that are compressible with data compression algorithms. Distilling these preferences into sequence priors, we propose a novel information-theoretic objective that incentivizes agents to learn policies that maximize rewards while conforming to these priors. We show that the resulting RL algorithm leads to faster learning, and attains higher returns than state-of-the-art model free approaches in a series of continuous control tasks. These priors also produce a powerful information-regularized agent that is robust to noisy observations and can perform open-loop control.</p>
+	</div>
+	
+	<div class="container">
+		<table>
+			<thead>
+				<tr>
+				  <th></th>
+				  <th>Soft Actor Critic</th>
+				  <th>LZ4 Agent (ours)</th>
+				  <th>Transformer Agent (ours)</th>
+				</tr>
+			</thead>
+			<tbody>
+			<tr>
+
+			</tr>
+			<tr>
+				<td>Cheetah run</td>
+				<td><img src="gifs/elmo.gif" alt="Soft Actor Critic"></td>
+				<td><img src="gifs/elmo.gif" alt="LZ4 Agent (ours)"></td>
+				<td><img src="gifs/elmo.gif" alt="Transformer Agent (ours)"></td>
+			 </tr>
+			<tr>
+				<td>Walker run</td>
+				<td><img src="gifs/elmo.gif" alt="Soft Actor Critic"></td>
+				<td><img src="gifs/elmo.gif" alt="LZ4 Agent (ours)"></td>
+				<td><img src="gifs/elmo.gif" alt="Transformer Agent (ours)"></td>
+			 </tr>
+			<tr>
+				<td>Quadruped walk</td>
+				<td><img src="gifs/elmo.gif" alt="Soft Actor Critic"></td>
+				<td><img src="gifs/elmo.gif" alt="LZ4 Agent (ours)"></td>
+				<td><img src="gifs/elmo.gif" alt="Transformer Agent (ours)"></td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
