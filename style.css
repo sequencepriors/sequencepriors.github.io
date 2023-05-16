@@ -29,11 +29,11 @@ p {
 table {
   border-collapse: collapse;
   margin: 20px auto;
-  width: 80%;
+  width: 100%;
 }
 
 td, th {
-  font-size: 20px;
+  font-size: 22px;
   padding: 10px;
   text-align: center;
   border: none;
