@@ -37,10 +37,10 @@ td, th {
   padding: 10px;
   text-align: center;
   border: none;
+  width: 10%;
 }
 
 th:first-child, td:first-child {
-  width: 20%;
   text-align: left;
 }
 
